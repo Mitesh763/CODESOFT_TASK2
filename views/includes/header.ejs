@@ -1,0 +1,14 @@
+<nav class="navbar">
+    <ul class="navbar-ul">
+        <li><a href="/">Home</a></li>
+        <li><a href="/quiz">Quiz</a></li>
+    </ul>
+    <ul class="navbar-ul2">
+        <% if(!currUser) {%>
+            <li><form action="/signup"><button>Sign-up</button></form></li>
+            <li><form action="/login"><button>Log-in</button></form></li>
+        <% } %> <% if(currUser) {%>
+            <li><form action="/logout"><button>Log-out</button></form></li>
+        <% } %>
+    </ul>
+</nav>

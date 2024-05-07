@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Web</title>
+    <link rel="stylesheet" href="/css/app_style.css">
+</head>
+<body>
+    <%- include("../includes/header.ejs") %>
+    <div class="flash-msg">
+        <%= success %>
+        <%= err%>
+    </div>
+    <div class="container"><%- body %></div>
+    <%- include("../includes/footer.ejs") %>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<% layout("/layouts/boilerplates") %>
+
+<body>
+    <div class="container-index">
+        <h1>Welcome To our Quiz Web</h1>
+        <% if(!currUser) {%>
+        <p>Log-in is required to Create and Apply for Quiz....!</p>
+        <%}%><% if(currUser) {%>
+            <p>Create A quiz And apply on it.....</p>
+            <ul class="rules">
+                <li>Go Quiz session</li>
+                <li>select number of Questions</li>
+                <li>Select your quiz Category</li>
+                <li>Choose Difficulty Level</li>
+                <li>Choose time For each Question</li>
+                <li>Start Quiz</li>
+            </ul>
+        <%}%>
+    </div>
+</body>
